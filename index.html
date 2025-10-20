@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prime Revive Salon Service Menu</title>
+  <style>
+    :root{--bg:#000;--text:#fff;--muted:rgba(255,255,255,0.72);--accent:#fff}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+    body{background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    .container{max-width:920px;margin:28px auto;padding:22px}
+    header{display:flex;gap:18px;align-items:center;border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:18px}
+    .logo{width:78px;height:78px;border-radius:10px;overflow:hidden;flex:0 0 78px;background:#111;display:flex;align-items:center;justify-content:center}
+    .logo img{width:100%;height:100%;object-fit:contain}
+    .title{flex:1}
+    h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+    .tagline{margin-top:6px;color:var(--muted);font-size:13px}
+    .strip{height:8px;background:linear-gradient(90deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));margin:18px 0;border-radius:6px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px}
+    .section-title{font-weight:600;margin:0 0 8px}
+    .service{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+    .service:last-child{border-bottom:0}
+    .service .name{font-size:15px}
+    .service .price{font-weight:700}
+    .muted{color:var(--muted);font-size:13px}
+    .book{display:inline-block;margin-top:14px;padding:12px 16px;border-radius:12px;background:transparent;border:1px solid rgba(255,255,255,0.14);color:var(--text);text-decoration:none;font-weight:600}
+    footer{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.04);display:flex;flex-direction:column;gap:10px}
+    .contact{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    a.simple{color:var(--accent);text-decoration:none}
+    .white-strip{height:6px;background:#fff;opacity:0.92;border-radius:6px;margin-bottom:18px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="white-strip"></div>
+    <header>
+      <div class="logo"><img src="logo.png" alt="Prime Revive Logo"></div>
+      <div class="title">
+        <h1>Prime Revive Salon Service Menu</h1>
+        <p class="lead">Where beauty meets relaxation</p>
+      </div>
+      <div>
+        <a class="book" href="https://wa.me/2348164081505?text=Hello%20Prime%20Revive%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">📅 Book Appointment</a>
+      </div>
+    </header>
+    <div class="strip"></div>
+    <main>
+      <div class="grid">
+        <section class="card">
+          <h3 class="section-title">Hairstyling & Treatment</h3>
+          <div class="service"><div class="name">Normal Haircut</div><div class="price">₦6,000</div></div>
+          <div class="service"><div class="name">VIP Haircut</div><div class="price">₦10,000</div></div>
+          <div class="muted">Includes drink, Netflix, shisha & personal space</div>
+          <div class="service"><div class="name">Hairwash & Blow Dry</div><div class="price">₦4,000</div></div>
+          <div class="service"><div class="name">Braids</div><div class="price">₦20,000</div></div>
+          <div class="service"><div class="name">Dreadlocks Maintenance</div><div class="price">₦30,000</div></div>
+          <div class="service"><div class="name">Starting Dread</div><div class="price">₦80,000</div></div>
+        </section>
+        <section class="card">
+          <h3 class="section-title">Nails & Beauty</h3>
+          <div class="service"><div class="name">Classic Manicure</div><div class="price">₦15,000</div></div>
+          <div class="service"><div class="name">Manicure</div><div class="price">₦6,000</div></div>
+          <div class="service"><div class="name">Jelly Pedicure</div><div class="price">₦17,000</div></div>
+          <div class="muted">Jelly Pedicure includes luxury soak, scrub, and paraffin finish.</div>
+        </section>
+        <section class="card">
+          <h3 class="section-title">Massage</h3>
+          <div class="service"><div class="name">Swedish Massage</div><div class="price">₦30,000/hr</div></div>
+          <div class="service"><div class="name">Deep Tissue Massage</div><div class="price">₦30,000/hr</div></div>
+          <div class="service"><div class="name">Hot Stone Massage</div><div class="price">₦35,000/hr</div></div>
+          <div class="service"><div class="name">Aromatherapy Massage</div><div class="price">₦35,000/hr</div></div>
+        </section>
+        <section class="card">
+          <h3 class="section-title">Body Beauty</h3>
+          <div class="service"><div class="name">Dermal Piercing (any area)</div><div class="price">₦50,000</div></div>
+          <div class="service"><div class="name">Ear Piercing</div><div class="price">₦25,000 - ₦30,000</div></div>
+          <div class="service"><div class="name">Tongue Piercing</div><div class="price">₦50,000</div></div>
+          <div class="service"><div class="name">Navel Piercing</div><div class="price">₦40,000</div></div>
+          <div class="service"><div class="name">Nipple Piercing</div><div class="price">₦60,000</div></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="contact">
+        📞 08164081505 |
+        TikTok: <a class="simple" href="https://vm.tiktok.com/ZSHv6PY4tKcsL-M4FVX/" target="_blank">@primerevive2001</a>
+      </div>
+      <div class="muted">© Prime Revive Salon & Spa</div>
+    </footer>
+  </div>
+</body>
+</html>
